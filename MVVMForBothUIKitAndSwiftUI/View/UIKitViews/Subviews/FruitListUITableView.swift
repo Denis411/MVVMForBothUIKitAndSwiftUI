@@ -35,6 +35,7 @@ extension FruitListUITableView {
     private func setUpUI() {
         self.register(FruilListUITableViewCell.self, forCellReuseIdentifier: FruilListUITableViewCell.identifier)
         dataSource = self
+        showsVerticalScrollIndicator = false
         rowHeight = UITableView.automaticDimension
         estimatedRowHeight = 150
     }
