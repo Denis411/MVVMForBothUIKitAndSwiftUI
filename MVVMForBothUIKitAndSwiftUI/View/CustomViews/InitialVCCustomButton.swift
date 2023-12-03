@@ -30,6 +30,7 @@ final class InitialVCCustomButton: UIButton {
         self.backgroundColor = .green
         self.layer.cornerRadius = 5
         self.titleLabel?.font = .systemFont(ofSize: 20)
+        self.setTitleColor(.orange, for: .highlighted)
     }
     
 }
