@@ -11,13 +11,12 @@ final class FruilListUITableViewCell: UITableViewCell {
     
     static let identifier = "FruilListUITableViewCell"
     private let verticalStackView = UIStackView()
-    private let edgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 10)
     
     private let titleView = FruitCellUIHorizontalStackView()
     private let caloriesView = FruitCellUIHorizontalStackView()
-    private let fatView = FruitCellUIHorizontalStackView()
-    private let carbohydratesView = FruitCellUIHorizontalStackView()
     private let proteinView = FruitCellUIHorizontalStackView()
+    private let carbohydratesView = FruitCellUIHorizontalStackView()
+    private let fatView = FruitCellUIHorizontalStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -35,9 +34,6 @@ final class FruilListUITableViewCell: UITableViewCell {
         fatView.update(title: "Fat:", value: model.fat)
         carbohydratesView.update(title: "Carbohydrates:", value: model.carbohydrates)
         proteinView.update(title: "Protein:", value: model.protein)
-        
-        setNeedsLayout()
-        layoutIfNeeded()
     }
     
     private func setUpUI() {
@@ -50,9 +46,9 @@ final class FruilListUITableViewCell: UITableViewCell {
         
         verticalStackView.addArrangedSubview(titleView)
         verticalStackView.addArrangedSubview(caloriesView)
-        verticalStackView.addArrangedSubview(fatView)
-        verticalStackView.addArrangedSubview(carbohydratesView)
         verticalStackView.addArrangedSubview(proteinView)
+        verticalStackView.addArrangedSubview(carbohydratesView)
+        verticalStackView.addArrangedSubview(fatView)
         
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(verticalStackView)
