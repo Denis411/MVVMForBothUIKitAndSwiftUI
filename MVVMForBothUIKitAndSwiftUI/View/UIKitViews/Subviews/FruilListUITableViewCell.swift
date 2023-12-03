@@ -49,14 +49,15 @@ final class FruilListUITableViewCell: UITableViewCell {
         verticalStackView.addArrangedSubview(proteinView)
         verticalStackView.addArrangedSubview(carbohydratesView)
         verticalStackView.addArrangedSubview(fatView)
+        verticalStackView.setContentCompressionResistancePriority(UILayoutPriority(1000), for: .vertical)
         
         verticalStackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(verticalStackView)
         
-        verticalStackView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        verticalStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        verticalStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        verticalStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        verticalStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
+        verticalStackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20).isActive = true
+        verticalStackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
+        verticalStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10).isActive = true
     }
     
 }
