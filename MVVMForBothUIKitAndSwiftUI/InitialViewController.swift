@@ -55,11 +55,17 @@ class InitialViewController: UIViewController {
 extension InitialViewController {
     
     @objc func actionA() {
-        
+        // You shoul use eitehr a coordinator of a router here
+        // I did not apply neither of the listed to focus on reusing ViewModel in both UIKit and SwiftUI
+        // I did not use DI for the same reason
+        let vm = FruitListViewModel()
     }
     
     @objc func actionB() {
-        
+        // You shoul use eitehr a coordinator of a router here
+        // I did not apply neither of the listed to focus on reusing ViewModel in both UIKit and SwiftUI
+        // I did not use DI for the same reason
+        let vm = FruitListViewModel()
     }
     
 }
