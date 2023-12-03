@@ -25,6 +25,9 @@ class InitialViewController: UIViewController {
         buttonA.setTitle("A view", for: .normal)
         buttonB.setTitle("B view", for: .normal)
         
+        buttonA.addTarget(self, action: #selector(actionA), for: .touchUpInside)
+        buttonB.addTarget(self, action: #selector(actionB), for: .touchUpInside)
+        
         [buttonA, buttonB].forEach { button in
             button.translatesAutoresizingMaskIntoConstraints = false
         }
@@ -48,3 +51,15 @@ class InitialViewController: UIViewController {
 
 }
 
+// MARK: - Actions
+extension InitialViewController {
+    
+    @objc func actionA() {
+        
+    }
+    
+    @objc func actionB() {
+        
+    }
+    
+}
