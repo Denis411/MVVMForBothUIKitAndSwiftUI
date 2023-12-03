@@ -39,6 +39,7 @@ final class FruilListUITableViewCell: UITableViewCell {
     private func setUpUI() {
         contentView.backgroundColor = .gray.withAlphaComponent(0.5)
         contentView.layer.cornerRadius = 10
+        selectionStyle = .none
         
         verticalStackView.axis = .vertical
         verticalStackView.alignment = .leading
