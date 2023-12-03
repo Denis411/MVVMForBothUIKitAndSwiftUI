@@ -17,6 +17,8 @@
 		603693772B1CCB2C00AE4F04 /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603693762B1CCB2C00AE4F04 /* FruitModel.swift */; };
 		6036937B2B1CCC4E00AE4F04 /* FruitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036937A2B1CCC4E00AE4F04 /* FruitListView.swift */; };
 		6036937E2B1CCF4500AE4F04 /* FruitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036937D2B1CCF4500AE4F04 /* FruitListCell.swift */; };
+		603693802B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */; };
+		603693832B1CD60F00AE4F04 /* FruitListUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		603693762B1CCB2C00AE4F04 /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
 		6036937A2B1CCC4E00AE4F04 /* FruitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListView.swift; sourceTree = "<group>"; };
 		6036937D2B1CCF4500AE4F04 /* FruitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListCell.swift; sourceTree = "<group>"; };
+		6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListUIViewViewController.swift; sourceTree = "<group>"; };
+		603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListUITableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		603693792B1CCBD500AE4F04 /* UIKitViews */ = {
 			isa = PBXGroup;
 			children = (
+				6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */,
+				603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -206,7 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				603693752B1CC93900AE4F04 /* ViewModel.swift in Sources */,
+				603693832B1CD60F00AE4F04 /* FruitListUITableView.swift in Sources */,
 				603693732B1C72B800AE4F04 /* InitialVCCustomButton.swift in Sources */,
+				603693802B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift in Sources */,
 				6036935F2B1C6FA700AE4F04 /* InitialViewController.swift in Sources */,
 				6036935B2B1C6FA700AE4F04 /* AppDelegate.swift in Sources */,
 				6036937B2B1CCC4E00AE4F04 /* FruitListView.swift in Sources */,

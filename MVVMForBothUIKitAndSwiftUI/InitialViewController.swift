@@ -70,7 +70,8 @@ extension InitialViewController {
         // You shoul use eitehr a coordinator of a router here
         // I did not apply neither of the listed to focus on reusing ViewModel in both UIKit and SwiftUI
         // I did not use DI for the same reason
-        let vm = FruitListViewModel()
+        let fruitViewController = FruitListUIViewController()
+        show(fruitViewController, sender: self)
     }
     
 }

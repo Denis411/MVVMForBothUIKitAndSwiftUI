@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 final class FruitListViewModel: ObservableObject {
     
-    @Published var fruitList: [FruitModel] = []
+    @Published private(set) var fruitList: [FruitModel] = []
     
     func loadFruits() {
         let singleFrout = FruitModel(title: "Apple", calories: " 96", fat: "0.2", carbohydrates:
