@@ -56,15 +56,39 @@
 		603693592B1C6FA700AE4F04 /* MVVMForBothUIKitAndSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6036936F2B1C6FBB00AE4F04 /* Model */,
+				6036936E2B1C6FAE00AE4F04 /* ViewModel */,
+				603693702B1C6FC900AE4F04 /* View */,
 				6036935A2B1C6FA700AE4F04 /* AppDelegate.swift */,
 				6036935C2B1C6FA700AE4F04 /* SceneDelegate.swift */,
-				6036935E2B1C6FA700AE4F04 /* ViewController.swift */,
 				603693602B1C6FA700AE4F04 /* Main.storyboard */,
 				603693632B1C6FA700AE4F04 /* Assets.xcassets */,
 				603693652B1C6FA700AE4F04 /* LaunchScreen.storyboard */,
 				603693682B1C6FA700AE4F04 /* Info.plist */,
 			);
 			path = MVVMForBothUIKitAndSwiftUI;
+			sourceTree = "<group>";
+		};
+		6036936E2B1C6FAE00AE4F04 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6036936F2B1C6FBB00AE4F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		603693702B1C6FC900AE4F04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6036935E2B1C6FA700AE4F04 /* ViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
