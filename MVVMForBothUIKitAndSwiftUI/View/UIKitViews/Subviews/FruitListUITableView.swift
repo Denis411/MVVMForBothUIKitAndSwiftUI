@@ -25,6 +25,8 @@ final class FruitListUITableView: UITableView {
         self.fruitList = fruitList
         // You may use logic on selective update to reload a concrete cell that has no dublicates
         self.reloadData()
+        setNeedsLayout()
+        layoutIfNeeded()
     }
     
 }
@@ -37,12 +39,12 @@ extension FruitListUITableView {
         dataSource = self
         showsVerticalScrollIndicator = false
         rowHeight = UITableView.automaticDimension
-        estimatedRowHeight = 150
+        estimatedRowHeight = 15
     }
     
 }
 
-// MARK: - Delegate
+// MARK: - UITableViewDataSource
 extension FruitListUITableView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
