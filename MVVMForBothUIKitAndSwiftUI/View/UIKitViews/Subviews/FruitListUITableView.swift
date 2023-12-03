@@ -35,13 +35,14 @@ extension FruitListUITableView {
     private func setUpUI() {
         self.register(FruilListUITableViewCell.self, forCellReuseIdentifier: FruilListUITableViewCell.identifier)
         dataSource = self
-        delegate = self
+        rowHeight = UITableView.automaticDimension
+        estimatedRowHeight = 150
     }
     
 }
 
 // MARK: - Delegate
-extension FruitListUITableView: UITableViewDataSource, UITableViewDelegate {
+extension FruitListUITableView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         fruitList.count
@@ -51,10 +52,6 @@ extension FruitListUITableView: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: FruilListUITableViewCell.identifier, for: indexPath)
         (cell as? FruilListUITableViewCell)?.updateCell(with: fruitList[indexPath.row])
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        100
     }
     
 }
