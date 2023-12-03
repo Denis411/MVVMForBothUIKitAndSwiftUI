@@ -19,6 +19,7 @@
 		6036937E2B1CCF4500AE4F04 /* FruitListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036937D2B1CCF4500AE4F04 /* FruitListCell.swift */; };
 		603693802B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */; };
 		603693832B1CD60F00AE4F04 /* FruitListUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */; };
+		603693862B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603693852B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		6036937D2B1CCF4500AE4F04 /* FruitListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListCell.swift; sourceTree = "<group>"; };
 		6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListUIViewViewController.swift; sourceTree = "<group>"; };
 		603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitListUITableView.swift; sourceTree = "<group>"; };
+		603693852B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCellUIHorizontalStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		603693792B1CCBD500AE4F04 /* UIKitViews */ = {
 			isa = PBXGroup;
 			children = (
+				603693842B1CE65500AE4F04 /* Subviews */,
 				6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */,
 				603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */,
 			);
@@ -137,6 +140,14 @@
 			isa = PBXGroup;
 			children = (
 				6036937D2B1CCF4500AE4F04 /* FruitListCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		603693842B1CE65500AE4F04 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				603693852B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -211,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				603693862B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift in Sources */,
 				603693752B1CC93900AE4F04 /* ViewModel.swift in Sources */,
 				603693832B1CD60F00AE4F04 /* FruitListUITableView.swift in Sources */,
 				603693732B1C72B800AE4F04 /* InitialVCCustomButton.swift in Sources */,
