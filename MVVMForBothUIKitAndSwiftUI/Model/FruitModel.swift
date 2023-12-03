@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FruitModel {
+struct FruitModel: Hashable {
     
     let title: String
     let calories: String

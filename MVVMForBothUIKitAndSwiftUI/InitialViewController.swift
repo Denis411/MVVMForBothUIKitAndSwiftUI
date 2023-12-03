@@ -51,6 +51,9 @@ class InitialViewController: UIViewController {
 
 }
 
+
+import SwiftUI
+
 // MARK: - Actions
 extension InitialViewController {
     
@@ -58,7 +61,9 @@ extension InitialViewController {
         // You shoul use eitehr a coordinator of a router here
         // I did not apply neither of the listed to focus on reusing ViewModel in both UIKit and SwiftUI
         // I did not use DI for the same reason
-        let vm = FruitListViewModel()
+        let fruitView = FruitListView()
+        let fruitViewController = UIHostingController(rootView: fruitView)
+        show(fruitViewController, sender: self)
     }
     
     @objc func actionB() {
