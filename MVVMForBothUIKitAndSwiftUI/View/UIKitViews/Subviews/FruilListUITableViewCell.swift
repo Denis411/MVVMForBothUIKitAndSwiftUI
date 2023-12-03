@@ -10,13 +10,14 @@ import UIKit
 final class FruilListUITableViewCell: UITableViewCell {
     
     static let identifier = "FruilListUITableViewCell"
-    let verticalStackView = UIStackView()
+    private let verticalStackView = UIStackView()
+    private let edgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 10)
     
-    let titleView = FruitCellUIHorizontalStackView()
-    let caloriesView = FruitCellUIHorizontalStackView()
-    let fatView = FruitCellUIHorizontalStackView()
-    let carbohydratesView = FruitCellUIHorizontalStackView()
-    let proteinView = FruitCellUIHorizontalStackView()
+    private let titleView = FruitCellUIHorizontalStackView()
+    private let caloriesView = FruitCellUIHorizontalStackView()
+    private let fatView = FruitCellUIHorizontalStackView()
+    private let carbohydratesView = FruitCellUIHorizontalStackView()
+    private let proteinView = FruitCellUIHorizontalStackView()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
