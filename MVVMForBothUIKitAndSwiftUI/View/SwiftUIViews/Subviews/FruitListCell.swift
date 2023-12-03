@@ -13,33 +13,31 @@ struct FruitListCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 10) {
-                Text("Fruit:")
-                Text(fruitModel.title)
-            }
-            
-            HStack(spacing: 10) {
-                Text("Calories:")
-                Text(fruitModel.calories)
-            }
-            
-            HStack(spacing: 10) {
-                Text("Protein:")
-                Text(fruitModel.protein)
-            }
-            
-            HStack(spacing: 10) {
-                Text("Carbohydrates:")
-                Text(fruitModel.carbohydrates)
-            }
-            
-            HStack(spacing: 10) {
-                Text("Fat:")
-                Text(fruitModel.fat)
-            }
-
+            FruitHStack(title: "Fruit:", value: fruitModel.title)
+            FruitHStack(title: "Calories:", value: fruitModel.calories)
+            FruitHStack(title: "Protein:", value: fruitModel.protein)
+            FruitHStack(title: "Carbohydrates:", value: fruitModel.carbohydrates)
+            FruitHStack(title: "Fat:", value: fruitModel.fat)
         }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 20)
+        .background(Color.gray.opacity(0.5))
         .cornerRadius(10)
+    }
+    
+}
+
+fileprivate struct FruitHStack: View {
+    
+    let title: String
+    let value: String
+    
+    var body: some View {
+        HStack(spacing: 10) {
+            Text(title)
+            Text(value)
+            Spacer()
+        }
     }
     
 }

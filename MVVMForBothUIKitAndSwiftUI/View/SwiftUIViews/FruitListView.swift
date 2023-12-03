@@ -12,10 +12,12 @@ struct FruitListView: View {
     @StateObject var fruitListViewModel = FruitListViewModel()
     
     var body: some View {
-        ForEach(fruitListViewModel.fruitList, id: \.self) { fruitModel in
-            FruitListCell(fruitModel: fruitModel)
-                .padding(.horizontal, 20)
+        ScrollView(.vertical, showsIndicators: false) {
+            ForEach(fruitListViewModel.fruitList, id: \.self) { fruitModel in
+                FruitListCell(fruitModel: fruitModel)
+            }
         }
+        .padding(.horizontal, 10)
         .onAppear {
             fruitListViewModel.loadFruits()
         }

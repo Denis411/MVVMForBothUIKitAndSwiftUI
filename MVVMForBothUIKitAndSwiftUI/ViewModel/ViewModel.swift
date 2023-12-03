@@ -15,7 +15,7 @@ final class FruitListViewModel: ObservableObject {
     func loadFruits() {
         let singleFrout = FruitModel(title: "Apple", calories: " 96", fat: "0.2", carbohydrates:
                                 "22", protein: "1")
-        fruitList = [singleFrout, singleFrout, singleFrout]
+        fruitList = [singleFrout, singleFrout, singleFrout, singleFrout, singleFrout, singleFrout]
     }
     
 }
