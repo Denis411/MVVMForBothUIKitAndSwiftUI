@@ -93,6 +93,8 @@
 		603693702B1C6FC900AE4F04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				603693792B1CCBD500AE4F04 /* UIKitViews */,
+				603693782B1CCBCB00AE4F04 /* SwiftUIViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,6 +105,20 @@
 				603693722B1C72B800AE4F04 /* InitialVCCustomButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		603693782B1CCBCB00AE4F04 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+		603693792B1CCBD500AE4F04 /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIKitViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
