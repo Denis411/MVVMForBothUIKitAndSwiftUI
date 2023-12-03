@@ -133,7 +133,6 @@
 			children = (
 				603693842B1CE65500AE4F04 /* Subviews */,
 				6036937F2B1CD5BD00AE4F04 /* FruitListUIViewViewController.swift */,
-				603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */,
 			);
 			path = UIKitViews;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 		603693842B1CE65500AE4F04 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
+				603693822B1CD60F00AE4F04 /* FruitListUITableView.swift */,
 				603693852B1CE66100AE4F04 /* FruitCellUIHorizontalStackView.swift */,
 				603693872B1CE6A100AE4F04 /* FruilListUITableViewCell.swift */,
 			);
