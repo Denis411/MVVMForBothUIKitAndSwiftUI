@@ -33,7 +33,8 @@ extension FruitCellUIHorizontalStackView {
     
     private func setUpUI() {
         self.axis = .horizontal
-        self.distribution = .fill
+        self.spacing = 10
+        self.alignment = .leading
         
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.addArrangedSubview(titleLabel)
