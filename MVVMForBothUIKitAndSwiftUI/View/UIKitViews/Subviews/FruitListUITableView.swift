@@ -57,7 +57,7 @@ extension FruitListUITableView: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        161
+        171
     }
     
 }
